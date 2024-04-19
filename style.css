@@ -1,4 +1,7 @@
-/* My second comment with more lines */
+body {
+  font-size: 1.125rem;
+}
+
 body {
   background-color: red;
 }
@@ -43,6 +46,52 @@ p {
 
 body {
   background-color: magenta;
+}
+
+body {
+  color: white;
+  background-color: greenyellow;
+}
+
+.text-size-1 {
+  font-size: 0.875rem;
+}
+
+.text-size-2 {
+  font-size: 1rem;
+}
+
+.text-size-3 {
+  font-size: 1.125rem;
+}
+
+.text-size-4 {
+  font-size: 1.25rem;
+}
+
+.text-size-5 {
+  font-size: 1.375rem;
+}
+
+.text-red {
+  color: #e3342f;
+}
+
+.text-green {
+  color: #38c172;
+}
+
+.text-blue {
+  color: #3490dc;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.125rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
