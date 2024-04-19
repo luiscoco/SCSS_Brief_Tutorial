@@ -12,6 +12,12 @@ To install the sass preprocessor please run the following command:
 npm install -g sass
 ```
 
+To verify the sass installation run this command:
+
+```
+sass --version
+```
+
 ## 1. Project folders and files structure
 
 **Before compiling** the SCSS file
