@@ -12,7 +12,7 @@ SCSS is a CSS preprocessor
 
 **After compiling** the SCSS file
 
-![image](https://github.com/luiscoco/SCSS_Sample1/assets/32194879/d8146888-d5d4-4b5e-9179-fbc88d096ac8)
+![image](https://github.com/luiscoco/SCSS_Sample1/assets/32194879/fa2f2c1c-484e-40f5-b3dc-9f5c9c247089)
 
 ## 2. HTML source code
 
