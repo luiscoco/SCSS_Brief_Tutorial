@@ -1,0 +1,48 @@
+/* My second comment with more lines */
+body {
+  background-color: red;
+}
+
+p {
+  color: white;
+}
+
+div h1 {
+  color: black;
+}
+div p {
+  color: blue;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: green;
+  border-radius: 20px;
+}
+
+button {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 32px;
+}
+
+.inheritance {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.inheritance {
+  background-color: cyan;
+}
+
+body {
+  background-color: magenta;
+}
+
+/*# sourceMappingURL=style.css.map */

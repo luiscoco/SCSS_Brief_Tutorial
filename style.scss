@@ -1,0 +1,69 @@
+//My first comment
+/* My second comment with more lines */
+@import 'variables';
+
+//How to use my variable
+body{
+    background-color: $primary-color;
+}
+
+p{
+    color: $font-color;
+}
+div{
+    h1{
+        color:$text-color;
+    }
+
+    p{
+        color:$other-color;
+    }
+}
+
+@mixin borderstyle($radius){
+    border-radius:$radius;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color: $label-color;
+    @include borderstyle(20px);
+}
+
+button{
+    @include borderstyle(10px);
+    margin-bottom:15px;
+}
+
+//Operations
+
+$high: 16px;
+
+p{
+    font-size: $high * 2.0;
+}
+
+//Inheritance
+
+%general{
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.inheritance{
+    @extend %general;
+    background-color: cyan;
+}
+
+//Conditions
+body{
+    @if $label-color == green{
+        background-color: magenta;
+    }
+    @else{
+        background-color: brown;
+    }
+}
