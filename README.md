@@ -4,6 +4,14 @@ https://www.youtube.com/watch?v=cRpmo58EE8A
 
 SCSS is a CSS preprocessor
 
+## 0. How to install SASS preprocessor
+
+To install the sass preprocessor please run the following command:
+
+```
+npm install -g sass
+```
+
 ## 1. Project folders and files structure
 
 **Before compiling** the SCSS file
