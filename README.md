@@ -56,12 +56,20 @@ sass --version
 </html>
 ```
 
-## 3. CSS source code
+## 3. SCSS source code
 
-```css
-//My first comment
-/* My second comment with more lines */
+```scss
+@use "sass:math";
+
 @import 'variables';
+
+@function px-to-rem($pixels, $root-font-size: 16px) {
+  @return #{math.div($pixels, $root-font-size)}rem;
+}
+
+body {
+  font-size: px-to-rem(18px); // Converts 18px to rem
+}
 
 //How to use my variable
 body{
@@ -127,6 +135,51 @@ body{
     @else{
         background-color: brown;
     }
+}
+
+@mixin theme-colors($theme) {
+  @if $theme == 'dark' {
+    color: white;
+    background-color: greenyellow;
+  } @else if $theme == 'light' {
+    color: black;
+    background-color: white;
+  } @else {
+    color: gray;
+    background-color: lightgray;
+  }
+}
+
+body {
+  @include theme-colors('dark'); // Applies dark theme colors
+}
+
+@for $i from 1 through 5 {
+  .text-size-#{$i} {
+    font-size: px-to-rem($i * 2 + 12px); // Generates font sizes from 14px to 22px in rem
+  }
+}
+
+// Define the colors map with quoted keys
+$colors: ("red": #e3342f, "green": #38c172, "blue": #3490dc);
+
+// Iterate over the colors map
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+@mixin responsive-text($size-desktop, $size-mobile) {
+  font-size: px-to-rem($size-desktop);
+
+  @media (max-width: 768px) {
+    font-size: px-to-rem($size-mobile);
+  }
+}
+
+h1 {
+  @include responsive-text(24px, 18px); // 24px on desktops, 18px on mobile devices
 }
 ```
 
